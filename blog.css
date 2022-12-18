@@ -1,0 +1,669 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    font-family: sans-serif;
+    /* overflow-y: hidden; */
+}
+
+/* NAVBAR CSS */
+
+.navbar{
+    background-position: center;
+    background-image: url(./src/banner-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    width: 100%;
+    /* background-attachment: fixed; */
+}
+
+.logo{
+    /* color: red; */
+    /* font-size: 19px; */
+    margin-left: 100px;
+}
+
+.logo h5{
+    color: white;
+}
+
+
+/* Navbar */
+nav{
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    gap: 16px;
+    justify-content: space-between;
+    padding-left: 250px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+/* .navbar .slide img{
+    width: 24px;
+    height: 24px;
+    padding: 12px 16px;
+} */
+
+.navbar .slide .bi {
+    padding: 14px;
+    background-color: brown;
+    border-radius: 50%;
+}
+
+.navbar .slide .bi:hover{
+    color: brown;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 0.1px solid brown;
+    transition: all 0.8s;
+}
+
+nav ul li a:hover{
+    color: brown;
+    transition: all 0.8s;
+}
+
+/* Hamburger Menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid white;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 41px;
+    height: 26px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+ .text-nav{
+    /* display: flex; */
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 200px;
+    position: relative;
+    top: -280px;
+}
+.text-nav h1{
+    font-size: 40px;
+}
+
+.text-nav .text-nav1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.text-nav .text-nav1 .text-nav2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-nav .text-nav1 .text-nav2 a:hover{
+    color: brown;
+    transition: all 0.8s;
+}
+
+
+
+
+
+
+
+
+
+/* CONTENT CSS */
+#blog{
+    margin: 40px auto 0;
+    width: 80%;
+    display: flex;
+}
+
+#content{
+    width: 65%;
+    padding-right: 10px;
+}
+
+#content .kiri .list{
+    display: flex;
+    margin: 50px 0;
+}
+
+#content .kiri .list img{
+    height: 215px;
+    width: 700px;
+}
+
+#content .kiri .list .list-text{
+    margin-left: 28px;
+}
+
+#content .kiri .list .list-text p{
+    margin: 16px 0;
+    line-height: 30px;
+}
+
+#content .kiri .list .list-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+    padding: 8px 12px;
+}
+
+#content .kiri .list .list-text .list-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#content .kiri .list .list-text .list-icon .list-icon1{
+    display: flex;
+    gap: 24px;
+}
+
+#content .kiri .list .list-text .list-icon .list-icon2{
+    display: flex;
+}
+
+#nomor .container{
+    display: flex;
+    gap: 20px;
+}
+
+#nomor .container a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(237, 236, 236);
+    padding: 15px;
+}
+
+#nomor .container a:hover{
+    background-color: brown;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+#search{
+    width: 35%;
+}
+
+#search .kanan{
+    margin: 50px 0 0 15px;
+}
+
+#search .kanan .bi{
+    color: brown;
+    padding: 10px;
+}
+
+#search .kanan .cari{
+    display: flex;
+}
+
+#search .kanan .cari input{
+    padding: 10px 130px 10px 5px;
+}
+
+#search .kanan .cari a{
+    background-color: brown;
+    padding: 18px 12px;
+}
+
+#search .kanan .cari i{
+    color: white;
+}
+
+#search .kanan h2{
+    padding: 35px 0;
+}
+
+#search .kanan ul{
+    list-style: none;
+    line-height: 34px;
+}
+
+#search .kanan a{
+    text-decoration: none;
+    color: black;
+}   
+
+
+
+
+
+
+#search .kanan .kalender h2{
+    padding: 50px 0;
+}
+
+#search .kanan .kalender .grid-container-2{
+    display: grid;
+    grid-template-columns: auto 270px auto ;
+}
+
+.grid-container-2 div {
+    text-align: center;
+    padding: 15px 0;
+}
+
+#search .kanan .kalender .grid-container-2 .item3{
+    font-weight: bold;
+    color: brown;
+}
+
+#search .kanan .kalender .grid-container-2 .item4 .bi{
+    color: black;
+}
+
+#search .kanan .kalender .grid-container-1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    border-bottom: 1px solid brown;
+    padding: 7px 0;
+    margin-bottom: 20px;
+}
+
+.grid-container-1 div {
+    text-align: center;
+    padding: 15px 0;
+}
+
+#search .kanan .kalender .grid-container-1 .item2{
+    font-weight: bold;
+}
+
+#search .kanan .kalender .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+  
+.grid-container div {
+    text-align: center;
+    padding: 15px 0;
+}
+  
+#search .kanan .kalender .grid-container .item1 {
+    grid-column: 1 / 5;
+}
+
+
+
+
+#search .kanan .archives a{
+    text-decoration: none;
+    color: black;
+}   
+
+
+#search .post .post-1{
+    display: flex;
+    padding: 25px 0;
+
+}
+
+#search .post .post-1 img{
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+#search .post .post-1 .post-text p{
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+
+
+
+#search .kanan .tags a{
+    padding: 10px 20px;
+    border: 0.1px solid gray;
+    border-radius: 10px;
+}
+
+#search .kanan  a:hover{
+    border: 0.1px solid brown;
+    color: brown;
+    transition: 0.5s all ease-in-out;
+}
+
+#search .kanan .tags .tags-1{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 60%; */
+    gap: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER CSS */
+#footer{
+    background-color: rgb(27, 27, 27);
+    /* box-sizing: border-box; */
+    margin-top: 100px;
+    width: 100%;
+}
+
+#footer .container .top {
+    color: white;
+    display: flex;
+    padding: 100px 100px 50px 100px;
+    gap: 16px;
+}
+
+#footer .container .top h3{
+    padding-bottom: 50px;
+}
+
+#footer .container .footer-col{
+    width: 25%;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    line-height: 24px;
+    flex-wrap: wrap;
+}
+
+#footer .container .footer-col .social-links img{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 12px;
+    margin-top: 30px;
+    margin-right: 12px;
+}
+
+#footer .container .footer-col .social-links img:hover{
+    background-color: brown;
+    transition: all 0.5s ease-in-out;
+}
+
+#footer .container .footer-col .footerimg{
+    display: flex;
+    gap: 12px;
+}
+
+#footer .container .footer-col .footerimg img{
+    width: 80px;
+    height: 80px;
+}
+
+#footer .container .top a{
+    color: white;
+    text-decoration: none;
+}
+
+#footer .container .top a:hover{
+    color: brown;
+    transition: all 0.4s ease-in-out;
+}
+
+#footer .container .top ul li{
+    list-style: none;
+}
+
+#footer .container .top .contact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#footer .container .cr{
+    color: white;
+    display: flex;
+}
+
+#footer .container .top .contact img {
+    width: 16px;
+}
+
+#footer .container .cr .rs ul li{
+    display: inline-block;
+    list-style: none;
+
+    color: white;
+}
+
+#footer .container .cr .rs ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer .container .cr .rs ul li a:hover{
+    color: brown;
+    transition: all 0.5s ease-in-out;
+}
+
+.sss{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: brown; */
+}
+
+#footer .container .cr{
+    display: flex;
+    width: 100%;
+    /* background-color: rgb(24, 24, 24); */
+    background-color: black;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 50px;
+}
+
+#footer .container .cr .rs ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+
+
+
+
+@media screen  and (max-width: 576px) {
+
+    .menu-toggle{
+        display: flex;
+        position: fixed;
+        margin-left: 250px;
+    }
+    .navbar nav ul{
+        position: absolute;
+        right: 0;
+        top: 101px;
+        width: 100%;
+        height: 50vh;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+        transform: translateY(-100%);
+        transition: all 0.5s;   
+        opacity: 0;
+    }
+
+    .logo{
+        margin: 0;
+        padding-right: 100px;
+    }
+
+    nav .slide img {
+        display: none;
+    }
+
+    .navbar nav ul.slide {
+        opacity: 1;
+        z-index: 1;
+        transform: translateY(0);
+    }
+
+    .navbar .slide .bi{
+        display: none;
+    }
+
+
+
+
+    #blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content {
+        width: 100%;
+        /* padding-right: 10px; */
+    }
+
+    #content .kiri .list{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+
+    #content .kiri .list .list-text{
+        margin: 0;
+        padding-top: 30px;
+        width: 125%;
+    }
+
+    #content .kiri .list .list-text a {
+        /* padding: 8px 20px; */
+        /* margin-right: 70px; */
+    }
+
+    #content .kiri .list .list-text .list-icon .list-icon1 {
+        display: flex;
+        gap: 15px;
+    }
+
+    
+
+
+
+    #content .kiri .list img{
+        width: 315px;
+    }
+
+    #search .kanan{
+        width: 310px;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    #search .kanan .cari input{
+        padding: 10px 90px 10px 0;
+    }
+
+    #search .kanan .kalender .grid-container-2 {
+        display: grid;
+        grid-template-columns: auto 240px auto;
+    }
+
+
+
+    #footer{
+        padding-top: 100px;
+    }
+
+    #footer .container .top .footer-col{
+        width: 80%;
+        margin-left: 18px;
+        margin-bottom: 40px;
+    }
+
+    #footer .container .top{
+        /* display: block; */
+
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #footer .container .cr{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        /* margin: 0; */
+        
+    }
+
+    #footer .container .cr .copy .copyright {
+        display: flex;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    #footer .container .cr .rs ul{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        margin-top: 50px;
+        gap: 24px;
+        padding-bottom: 30px;
+    }
+
+    
+    
+
+}
